@@ -8,7 +8,7 @@ Scrot: Taking for screenshots.
 
   Run the following command. The pictures are stored in ~/screenshots
   
-  $ mkdir -p ~/screenshots
+    $ mkdir -p ~/screenshots
   
 Xscreensaver: For locking the screen and screensaver
 
@@ -22,6 +22,6 @@ Commands:
   
     Keys: Alt + Shift + S
     
-  Print Scree:
+  Print Screen:
   
     Keys: Alt + Print
