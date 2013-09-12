@@ -17,7 +17,11 @@ Xscreensaver: For locking the screen and screensaver
 Modkey: Alt
 
 Commands:
+
   Screensaver:
+  
     Keys: Alt + Shift + S
+    
   Print Scree:
+  
     Keys: Alt + Print
