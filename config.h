@@ -51,6 +51,8 @@ static const char *termcmd[]  = { "urxvt", NULL };
 static const char *incvol[] = {"amixer","set","Master","1+"};
 static const char *screensaver[] = { "xscreensaver-command","-lock", NULL};
 static const char *screenshot[] = {"scrot","%Y-%m-%d_$wx$h.png","-e","mv $f ~/screenshots/",NULL};
+static const char *volumeplus[] = {"amixer","set","Master","1+",NULL};
+static const char *volumemin[] = {"amixer","set","Master","1-",NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -58,6 +60,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_s,      spawn,          {.v = screensaver }},
 	{ MODKEY,		        XK_Print,  spawn,          {.v = screenshot }},	
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd }},
+	{ MODKEY|ShiftMask,             XK_Left,   spawn,          {.v = volumemin }},
+	{ MODKEY|ShiftMask,             XK_Right,  spawn,          {.v = volumeplus }},
 	{ MODKEY|ShiftMask,		XK_Right,  spawn,	   {.v = incvol }},
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
