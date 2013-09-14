@@ -2,7 +2,7 @@ my-dwm-config
 =============
 
 DWM with my config
-Depends: scrot, xscreensaver
+Depends: scrot, xscreensaver, alsamixer
 
 Scrot: Taking for screenshots.
 
